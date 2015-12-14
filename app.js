@@ -9,6 +9,12 @@ app.set("view engine", "ejs");
 var campgrounds = [
 		{name: "Salmon Creek", image: "https://farm9.staticflickr.com/8002/7299820870_e78782c078.jpg"},
 		{name: "Smith Rock", image: "https://farm4.staticflickr.com/3795/10131087094_c1c0a1c859.jpg"},
+		{name: "Honeyman State Park", image: "https://farm6.staticflickr.com/5487/11519019346_f66401b6c1.jpg"},
+		{name: "Salmon Creek", image: "https://farm9.staticflickr.com/8002/7299820870_e78782c078.jpg"},
+		{name: "Smith Rock", image: "https://farm4.staticflickr.com/3795/10131087094_c1c0a1c859.jpg"},
+		{name: "Honeyman State Park", image: "https://farm6.staticflickr.com/5487/11519019346_f66401b6c1.jpg"},
+		{name: "Salmon Creek", image: "https://farm9.staticflickr.com/8002/7299820870_e78782c078.jpg"},
+		{name: "Smith Rock", image: "https://farm4.staticflickr.com/3795/10131087094_c1c0a1c859.jpg"},
 		{name: "Honeyman State Park", image: "https://farm6.staticflickr.com/5487/11519019346_f66401b6c1.jpg"}
 	]
 
