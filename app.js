@@ -15,7 +15,7 @@ var commentRoutes 		= require("./routes/comments"),
 		indexRoutes 			= require("./routes/index");
 
 
-mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect(process.env.MONGOLAB_URI ||"mongodb://localhost/yelp_camp");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
@@ -43,6 +43,8 @@ app.use(indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
-app.listen(3000, function(){
-	console.log("App running on 3000, baby!");
+var port = Number(process.env.PORT || 3000);
+
+app.listen(port, function(){
+	console.log("App is running, baby!");
 })
